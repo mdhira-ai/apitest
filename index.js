@@ -11,7 +11,7 @@ const app = express();
 //     origin: "http://localhost:8081"
 // };
 
-// const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 
 app.use(cors());
@@ -31,9 +31,9 @@ app.get("/", (req, res) => {
 app.post("/add", userinfo.create);
 
 
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}.`);
-// })
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}.`);
+})
 
 db.mongoose
     .connect(db.url, {
