@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const db = require("./models");
-const userinfo = require('../apitest/controller/userinfo.controller.js')
+const userinfo = require('./controller/userinfo.controller.js')
 const cors = require("cors");
 // const functions = require('firebase-functions')
 
