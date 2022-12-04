@@ -1,4 +1,4 @@
-const db = require("../models/index.js");
+const db = require("../models");
 const Tutorial = db.userinfo;
 
 // Create and Save a new Tutorial
